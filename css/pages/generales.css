@@ -19,10 +19,6 @@
     font-size: 12px;
 }
 
-escrutado{
-
-}
-
 .agrup-polit{
     width: 300px; 
     height: 325px; 
@@ -33,7 +29,9 @@ escrutado{
     display: inline-block;
     overflow: auto;
     font-family: 12px;
+    border-radius: 25px;
 }
+
 
 .mapa{
     width: 300px; 
@@ -46,6 +44,45 @@ escrutado{
     overflow: auto;
 }
 
+/*--------MENSAJES--------*/
+.msgexito{
+    background-color: var(--mensaje-usuario-verde);
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.msgerror{
+    background-color: var(--mensaje-usuario-rojo);
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.msgnocomplet{
+    background-color: var(--mensaje-usuario-amarillo);
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+/*-----CUADROS-----*/
+
 .chart-wrap {
     --chart-width: 260px;
     --grid-color: #aaa;
@@ -53,74 +90,82 @@ escrutado{
     --bar-rounded: 3px;
     --bar-spacing: 10px;
     font-family: sans-serif;
-    width: var(--chart-width);
-    }
-    .chart-wrap .title {
+    width: 500px;
+}
+
+.chart-wrap .title {
     font-weight: bold;
     padding: 1.8em 0 2.8em;
     text-align: center;
     white-space: nowrap;
-    }
-    /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
-    .chart-wrap.horizontal .grid {
+}
+
+/* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+.chart-wrap.horizontal .grid {
     transform: rotate(-90deg);
-    }
-    .chart-wrap.horizontal .bar::after {
+
+}
+
+.chart-wrap.horizontal .bar::after {
     /* giramos las letras para horizontal*/
     transform: rotate(45deg);
     padding-top: 0px;
     display: block;
-    }
-    .chart-wrap .grid {
+}
+
+.chart-wrap .grid {
     margin-left: 50px;
     position: relative;
     padding: 5px 0 5px 0;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     border-left: 2px solid var(--grid-color);
     font-size: 10px;
-    }
-    /* posicionamos el % del gráfico*/
-    .chart-wrap .grid::before {
+    align-items: center;
+    justify-content: center;
+}
+
+/* posicionamos el % del gráfico*/
+.chart-wrap .grid::before {
     font-size: 0.8em;
     font-weight: bold;
     content: '0%';
     position: absolute;
     left: -0.5em;
     top: -1.5em;
-    }
-    .chart-wrap .grid::after {
+}
+
+.chart-wrap .grid::after {
     font-size: 0.8em;
     font-weight: bold;
     content: '100%';
     position: absolute;
     right: -1.5em;
     top: -1.5em;
-    }
-    /* giramos las valores de 0% y 100% para horizontal */
-    .chart-wrap.horizontal .grid::before,
-    .chart-wrap.horizontal .grid::after {
+}
+
+/* giramos las valores de 0% y 100% para horizontal */
+.chart-wrap.horizontal .grid::before,
+.chart-wrap.horizontal .grid::after {
     transform: rotate(90deg);
-    }
-    .chart-wrap .bar {
+}
+
+.chart-wrap .bar {
     width: var(--bar-value);
     height: var(--bar-thickness);
     margin: var(--bar-spacing) 0;
     background-color: var(--bar-color);
     border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
-    }
-    .chart-wrap .bar:hover {
+}
+
+.chart-wrap .bar:hover {
     opacity: 0.7;
-    }
-    .chart-wrap .bar::after {
+}
+
+.chart-wrap .bar::after {
     content: attr(data-name);
     margin-left: 100%;
     padding: 10px;
     display: inline-block;
     white-space: nowrap;
-    }
-
-    table{
-        overflow: auto;
-        border-radius: 5px;
-    }
+}

@@ -16,53 +16,60 @@
             Electoral
             </a>
         </div>
+
+        
         <!--Barra de menú principal-->
-        <select name="año" id="año">
-            <option value=""disabled selected hidden>Año</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-        </select>
+        <ul class="nav"></ul>
+            <li>
+                <select name="anio" id="anio" class="filter">
+                    <option value="anio">Año</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                </select>
+            </li>
+            <li>
+                <select name="cargo" id="cargo" class="filter">
+                    <option value="cargo">Cargo</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+            </select>
+            </li>
+            <li>
+                <select name="distrito" id="distrito" class="filter">
+                    <option value="distrito"n>Distrito</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                </select>
+            </li>
 
-        <select name="cargo" id="cargo">
-            <option value=""disabled selected hidden>Cargo</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-        </select>
-
-        <select name="distrito" id="distrito">
-            <option value=""disabled selected hidden>Distrito</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-        </select>
-
-        <button><img src="" alt=""> Filtrar</button>
-        <a href="informes.HTML"><button>Informes</button></a>
-        <a href="index.HTML"><button>Inicio</button></a>
-        <ul>
+            <li><a href=""><img src="" alt=""> Filtrar</a></li>
+            <li><a href="informes.HTML">Informes</a></li>
+            <li><a href="index.HTML">Inicio</a></li>
             <li><a class="active" href="informes.HTML">Informes</a></li>
             <li><a href="#contact">Contacto</a></li>
+
         </ul>
     </header>
 
  <!-- Contenido principal de la página -->
     <main>
         <section id="sec-titulo">
-            <!--Seccion para agregar una palicula favorita por codigo-->
+
             <h2>Elecciones 2021 | Generales</h2>
             <a href="#2021">2021</a>
             <a href="#generales">Generales</a>
@@ -72,7 +79,9 @@
             <br>
         </section>
         <section id="sec-messages">
-
+            <p class="msgexito">Se agrego con exito el resultado al informe</p>
+            <p class="msgerror">Error. Se produjo un error al intentar agregar resultados al informe</p>
+            <p class="msgnocomplet">La operacion no se pudo completar</p>
         </section>
         <section id="sec-contenido">
         <!--Seccion para contenido de la página-->
@@ -115,35 +124,33 @@
         </div>
 
 
-        <div class="chart-wrap horizontal">
-            <div class="title">Título de la grafica</div>
+        <div class="chart-wrap horizontal recuadros">
+            <div class="title"><center>Resumen de Votos</center></div>
             <div class="grid">
-                <div class="progress" style="background: var(--grafica-amarillo-claro);">
-                    <div class="progress-bar" style="width:15%; background: var(--graficaamarillo);">
-                    <span class="progress-bar-text">15%</span>
-                    </div>
-                    </div>
-                <div class="bar" style="--bar-value:23%;" data-name="Partido 2" title="Medium
-                23%"></div>
-                <div class="bar" style="--bar-value:7%;" data-name="Partido 3" title="Tumblr
-                7%"></div>
-                <div class="bar" style="--bar-value:38%;" data-name="Partido 4" title="Facebook
-                38%"></div>
-                <div class="bar" style="--bar-value:35%;" data-name="Partido 5" title="YouTube
-                35%"></div>
-                <div class="bar" style="--bar-value:30%;" data-name="Partido 6" title="LinkedIn
-                30%"></div>
-                <div class="bar" style="--bar-value:5%;" data-name="Partido 7" title="Twitter
-                5%"></div>
-                <div class="bar" style="--bar-value:20%;" data-name="Otros" title="Other
-                20%"></div>
+                <div class="bar" style="--bar-value:85%;--bar-color:var(--grafica-amarillo);" data-name="Partido 1" title="Your Blog 85%"></div>
+                <div class="bar" style="--bar-value:23%;--bar-color:var(--grafica-lila2);" data-name="Partido 2" title="Medium 23%"></div>
+                <div class="bar" style="--bar-value:7%;--bar-color:var(--grafica-bordo);" data-name="Partido 3" title="Tumblr 7%"></div>
+                <div class="bar" style="--bar-value:38%;--bar-color:var(--grafica-celeste);" data-name="Partido 4" title="Facebook 38%"></div>
+                <div class="bar" style="--bar-value:35%;--bar-color:var(--grafica-lila-claro);" data-name="Partido 5" title="YouTube 35%"></div>
+                <div class="bar" style="--bar-value:30%;--bar-color:var(--grafica-rojo);" data-name="Partido 6" title="LinkedIn 30%"></div>
+                <div class="bar" style="--bar-value:5%;--bar-color:var(--grafica-gris);" data-name="Partido 7" title="Twitter 5%"></div>
+                <div class="bar" style="--bar-value:20%;--bar-color:var(--grafica-verde);" data-name="Otros" title="Other 20%"></div>
             </div>
         </div>
         </section>
     </main>
     <!--Pie de página-->
-    <footer>
-        <p>Desarrollado con ♥ - LC2</p>
+    <footer >
+        <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" alt="Ministerio">
+        <img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="">
+        <img src="img/icons/logos_001-10.4430c8d5.png" alt="">
+        <p>Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los 
+          porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art. 
+          45 Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores 
+          residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a href="#terminos">Términos y 
+          Condiciones.</a></p>
+           
+
     </footer>
 </body>
 
