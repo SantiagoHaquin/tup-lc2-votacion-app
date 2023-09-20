@@ -1,47 +1,86 @@
-#mesas-escrutadas{
-    background-color: rgb(21, 156, 235);
-    padding: 0.5rem 1rem;
-    width: 184px;
-    border-radius: 10px;
-    height: 70px;
-    margin: #FFF, 15px;
-    font-size: 12px;
-    
-}
-
-#electores{
-    background-color: magenta;
-    padding: 0.5rem 1rem;
-    width: 184px;
-    border-radius: 10px;
-    height: 70px;
-    margin: #FFF, 15px;
-    font-size: 12px;
-}
-
-.agrup-polit{
-    width: 300px; 
-    height: 325px; 
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    margin: 10px;
+/*--------ESTILO PARA EL ARCHIVO GENERALES.HTML--------*/
+/*--------BARRA MENU--------*/
+.barra-menu-generales{
+    display: flex;
     padding: 10px;
-    display: inline-block;
-    overflow: auto;
-    font-family: 12px;
-    border-radius: 25px;
+    background-color: var(--fondo-Menu);
+    list-style: none;
+    align-items: center;
+    margin: 0px;
+    gap: 10px;
+}
+.inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
+.inicio:hover {
+    color: var(--textos);
+}
+.fa-magnifying-glass{
+    padding-right: 7px;
+}
 
-.mapa{
-    width: 300px; 
-    height: 325px; 
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    overflow: auto;
+.filtrar {
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--textos);
+    text-decoration: none;
+}
+
+.menuinformes{
+    text-decoration: none;
+    border: solid 1px;
+    padding: 5px 15px;
+    font-size: 10px;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.menuinformes:hover{
+    background-color: var(--gris-claro);
+}
+.menuinicio {
+    text-decoration: none;
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 68px;
+}
+
+.paso{
+    border: none;
+    background-color: var(--magenta);
+    border-radius: 8px;
+    padding: 5px 25px;
+    color: #FFF;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 80px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.filter{
+    background-color: var(--fondo-Menu);
+    color: var(--celeste);
+    border: none;
 }
 
 /*--------MENSAJES--------*/
@@ -81,16 +120,196 @@
     text-align: center;
 }
 
-/*-----CUADROS-----*/
+/*--------CONTENIDO--------*/
+
+.texto-path {
+    font-size: 14px;
+    color: var(--celeste);
+}
+
+#sec-contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajcuadros {
+    display: flex;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--celeste);
+}
+
+/*--------RECUADROS DE RESUMEN DE INFORMACION EMPIEZA--------*/
+
+.cuadrosInformativos {
+    display: flex;
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    width: 184px;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+}
+
+.cuadrosInformativos p {
+    color: white;
+}
+
+.mesas-escrutadas {
+    background-color: var(--celeste);
+}
+
+.electores {
+    background-color: var(--magenta);
+}
+
+.escrutado {
+    background-color: var(--morado);
+}
+
+.agrInforme {
+    background-color: var(--gris-claro);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 50px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    height: 30px;
+}
+
+.agrInforme:hover {
+    color: var(--textos);
+}
+
+.cuadrosPrincipal {
+    display: flex;
+    justify-content: center;
+}
+
+.agrup-polit{
+    height: 325px;
+    width: 500px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    overflow: auto;
+    font-family: 12px;
+    border-radius: 25px;
+    overflow: scroll;
+    margin: 25px;
+}
+
+/*--------AGRUPACION POLITICA--------*/
+.progress {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--grafica-amarillo);
+}
+  
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textos);
+    font-size: 9px;
+    margin: 50%;
+}
+
+.progress-bar-eco {
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--grafica-verde);
+}
+
+
+.peso {
+    color: var(--textos);
+    font-size: 11px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.subTitulo {
+    font-weight: bold;
+}
+
+.partidos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapaBox {
+    margin: 25px;
+}
+
+
+/*--------CUADROS--------*/
+/*----EMPIEZA----*/
+
+
+.tituloAgrup {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--borde-Grilla);
+}
+
+.title {
+    font-weight: bold;
+    padding: 1.8rem 0 0 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.cuadros {
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px var(--borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mapa {
+    display: flex;
+}
+
+/*--------RESUMEN DE VOTOS--------*/
+/*----EMPIEZA----*/
 
 .chart-wrap {
-    --chart-width: 260px;
-    --grid-color: #aaa;
+    height: 325px;
+    width: 500px; 
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-family: 12px;
+    border-radius: 25px;
+    margin: 25px;
     --bar-thickness: 25px;
-    --bar-rounded: 3px;
     --bar-spacing: 10px;
-    font-family: sans-serif;
-    width: 500px;
+    --grid-color: #aaa;
+    --bar-rounded: 3px;
+    --chart-width: 260px;
+    
 }
 
 .chart-wrap .title {
@@ -100,14 +319,13 @@
     white-space: nowrap;
 }
 
-/* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+
 .chart-wrap.horizontal .grid {
     transform: rotate(-90deg);
 
 }
 
 .chart-wrap.horizontal .bar::after {
-    /* giramos las letras para horizontal*/
     transform: rotate(45deg);
     padding-top: 0px;
     display: block;
@@ -124,14 +342,12 @@
     align-items: center;
     justify-content: center;
 }
-
-/* posicionamos el % del gráfico*/
 .chart-wrap .grid::before {
     font-size: 0.8em;
     font-weight: bold;
     content: '0%';
     position: absolute;
-    left: -0.5em;
+    left: -1.5em;
     top: -1.5em;
 }
 
@@ -144,7 +360,6 @@
     top: -1.5em;
 }
 
-/* giramos las valores de 0% y 100% para horizontal */
 .chart-wrap.horizontal .grid::before,
 .chart-wrap.horizontal .grid::after {
     transform: rotate(90deg);
