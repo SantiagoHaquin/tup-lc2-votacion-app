@@ -1,8 +1,8 @@
 /*--------Estilo General--------*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
-*{
-font-family: 'Roboto', sans-serif;
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -51,7 +51,7 @@ body {
     color: var(--textos);
     font-family: 'Roboto';
   }
-h1{
+  h1{
     font-size: 26px;
     font-family: 'Roboto';
     color: var(--titulos);
@@ -67,7 +67,7 @@ h1{
     font-family: 'Roboto';
     color: var(--titulos);
   }
-  /*--------Pie de Pagina(FOOTER)--------*/
+  /*--------Pie de Pagina(FOOTER)*--------*/
   footer{
       padding: 15px;
       margin-top: 50px;
@@ -102,9 +102,9 @@ footer>p>a{
   width: 150px;
 }
 
-.barra-menu-generales{
+.barra-menu{
   display: flex;
-  padding: 0.5em;
+  padding: 1px;
   background-color: var(--fondo-Menu);
   list-style: none;
   align-items: center;

@@ -44,11 +44,12 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-
+    
 }
 .menupaso:hover{
     background-color: var(--gris-claro);
 }
+
 .menugenerales{
     text-decoration: none;
     background-color: var(--celeste);
@@ -102,17 +103,17 @@
 }
 #content-index{
     padding: 20px;
-
+    
 }
 
 .contenido-tipos{
     display: flex;
     justify-content: center;
-
+    
 }
 .contenido-tipos>button>div>a{
     text-decoration: none;
-    color: #fff;
+    color: #fff;    
 }
 .link-pasoygeneral{
     position: relative;
@@ -121,8 +122,8 @@
 }
 
 .titulo-contenido{
-    padding: 20px;
-
+    padding-left: 40px;
+    
 }
 .boton-paso{
     background-color: var(--magenta);
@@ -135,9 +136,9 @@
     color: #fff;
     font-size: 24px;
     text-align: left;
-
+    
 }
-.boton-generales{
+.boton-generales{                
     background-color: var(--celeste);
     border-radius: 10px;
     margin: 25px;
@@ -148,5 +149,7 @@
     font-size: 24px;
     border: none;
     text-align: left;
-
+   
 }
+
+
